@@ -1,6 +1,6 @@
 Crear aplicacion con TS
 
-npx create-react-app my-app --template typescript
+npx create-react-app event_web --template typescript
 
 Ejecutar aplicación:
 
