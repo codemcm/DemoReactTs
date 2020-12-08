@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 
 // Generate Order Data
-function createData(id, date, name, shipTo, paymentMethod, amount) {
+function createData(id:number, date:string, name:string, shipTo:string, paymentMethod:string, amount:number) {
   return { id, date, name, shipTo, paymentMethod, amount };
 }
 
@@ -21,9 +21,7 @@ const rows = [
   createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
 ];
 
-function preventDefault(event) {
-  event.preventDefault();
-}
+
 
 const useStyles = makeStyles((theme) => ({
   seeMore: {
@@ -59,7 +57,7 @@ export default function Orders() {
         </TableBody>
       </Table>
       <div className={classes.seeMore}>
-        <Link color="primary" href="#" onClick={preventDefault}>
+        <Link color="primary" href="#" >
           See more orders
         </Link>
       </div>
