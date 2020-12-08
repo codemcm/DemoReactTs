@@ -1,5 +1,7 @@
 Crear aplicacion con TS
 
-npx react-native init MyApp --template react-native-template-typescript
+npx create-react-app my-app --template typescript
 
 Ejecutar aplicación:
+
+npm start
